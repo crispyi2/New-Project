@@ -10,17 +10,17 @@
 |-------------------------|--------------------|----------|--------------------|
 | gnome builder           |                    | :x:      | :heavy_check_mark: |
 | jupyter notebook        |                    | :x:      | :heavy_check_mark: |
-| python script           |                    | :x:      | :heavy_check_mark: |
-| WSL                     |                    | :x:      | :heavy_check_mark: |
-| c                       |                    | :x:      | :heavy_check_mark: |
-| c++                     |                    | :x:      | :heavy_check_mark: |
-| c#                      |                    | :x:      | :heavy_check_mark: |
-| vscode extension        |                    | :x:      | :heavy_check_mark: |
-| visual studio extension |                    | :x:      | :heavy_check_mark: |
-| intellij ide extension  |                    | :x:      | :heavy_check_mark: |
-| bash script             |                    | :x:      | :heavy_check_mark: |
-| powershell script       |                    | :x:      | :heavy_check_mark: |
-| yeoman generator        |                    | :x:      | :heavy_check_mark: |
+| python script           |                    | :x:      | :x: |
+| WSL                     |                    | :x:      | :x: |
+| c                       |                    | :x:      | :x: |
+| c++                     |                    | :x:      | :x: |
+| c#                      |                    | :x:      | :x: |
+| vscode extension        |                    | :x:      | :x: |
+| visual studio extension |                    | :x:      | :x: |
+| intellij ide extension  |                    | :x:      | :x: |
+| bash script             |                    | :x:      | :x: |
+| powershell script       |                    | :x:      | :x: |
+| yeoman generator        |                    | :x:      | :x: |
 
 
 ### helping with the different editions
