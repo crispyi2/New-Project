@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Haxe Project",
+    "description": "Schema for a Haxe project",
+    "type": "object",
+    "oneOf": [
+        {
+            "properties": {
+                "framework": {
+                    "description": "What type of haxe project",
+                    "type": "string",
+                    "enum": [
+                        "Haxeflixel",
+                        "Haxe Punk",
+                        "OpenFL",
+                        null
+                    ]
+                }
+            },
+            "required": [
+                "framework"
+            ]
+        }
+    ]
+}
