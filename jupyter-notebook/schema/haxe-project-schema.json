@@ -15,10 +15,52 @@
                         "OpenFL",
                         null
                     ]
+                },
+                "framework-options": {
+                    "if": {
+                        "properties": {
+                            "framework": {
+                                "const": "Haxeflixel"
+                            }
+                        }
+                    },
+                    "then": {
+                        "oneOf": [
+                            {
+                                "properties": {
+                                    "options": {
+                                        "description": "project options",
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        ],
+                        "properties": {
+                            "options": {
+                                "description": "project options",
+                                "type": "object",
+
+                                "oneOf": [
+                                    {
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": ["name"]
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "options"
+                        ]
+                    }
                 }
             },
             "required": [
-                "framework"
+                "framework",
+                "framework-options"
             ]
         }
     ]

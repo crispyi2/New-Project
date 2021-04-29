@@ -1,3 +1,11 @@
 {
-    "$schema": "./haxe-project-schema.json"
+    "$schema": "./haxe-project-schema.json",
+
+    "framework": "Haxeflixel",
+
+    "framework-options": {
+        "options": {
+            
+        }
+    }
 }
