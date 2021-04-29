@@ -5,7 +5,8 @@
 
     "framework-options": {
         "options": {
-            
+            "name": "test",
+            "from-template": true
         }
     }
 }

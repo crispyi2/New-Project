@@ -44,7 +44,12 @@
                                     {
                                         "properties": {
                                             "name": {
+                                                "description": "the name of your haxe project",
                                                 "type": "string"
+                                            },
+                                            "from-template": {
+                                                "description": "is it going to be created from a template",
+                                                "type": "boolean"
                                             }
                                         },
                                         "required": ["name"]
