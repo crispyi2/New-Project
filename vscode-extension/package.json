@@ -7,7 +7,7 @@
 		"url": "https://github.com/crispyi2/New-Project"
 	},
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -15,7 +15,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:new-project.helloWorld"
+		"onCommand:new-project.helloWorld",
+		"onCommand:new-project.newProject"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -23,6 +24,10 @@
 			{
 				"command": "new-project.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "new-project.newProject",
+				"title": "New Project"
 			}
 		]
 	},

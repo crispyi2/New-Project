@@ -20,8 +20,41 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from New-Project!');
 	});
 
+	vscode.commands.registerCommand('new-project.newProject', () => {
+		// Create and show a new webview
+		const panel = vscode.window.createWebviewPanel(
+		  'newProject', // Identifies the type of the webview. Used internally
+		  'New Project', // Title of the panel displayed to the user
+		  vscode.ViewColumn.One, // Editor column to show the new webview panel in.
+		  {} // Webview options. More on these later.
+		);
+
+		panel.webview.html = getWebviewContent();
+	  })
+
 	context.subscriptions.push(disposable);
 }
+
+function getWebviewContent() {
+	return `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>New Project</title>
+  </head>
+  <body>
+	<div id="main-view">
+		<div "id=project-buttons">
+			<button id="new-project-btn">New Project</button>
+			<button id="scaffold-project-btn">Scaffold Project</button>
+			<button id="quit-btn">Quit</button>
+		</div>
+	</div>
+  </body>
+  </html>`;
+  }
+  
 
 // this method is called when your extension is deactivated
 export function deactivate() {}
